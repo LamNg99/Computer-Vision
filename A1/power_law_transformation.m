@@ -15,12 +15,12 @@ img1 = imadjust(gray_img, [], [], 0.3);
 % Gamma equals to 3
 img2 = imadjust(gray_img, [], [], 3);
 
+% Display results
 figure;
-subplot(1,3,1)
 imshow(gray_img)
 
-subplot(1,3,2)
+figure;
 imshow(img1)
 
-subplot(1,3,3)
+figure;
 imshow(img2)

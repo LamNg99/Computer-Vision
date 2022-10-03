@@ -22,40 +22,37 @@ hist2 = histeq(img2, 256);
 
 % Display histograms and images before and after equalization
 figure;
-subplot(2,2,1)
 imshow(gray_img)
 
-subplot(2,2,2)
+figure;
 imshow(hist_gray)
 
-subplot(2,2,3)
+figure;
 imhist(gray_img)
 
-subplot(2,2,4)
+figure;
 imhist(hist_gray, 256)
 
 figure;
-subplot(2,2,1)
 imshow(img1)
 
-subplot(2,2,2)
+figure;
 imshow(hist1)
 
-subplot(2,2,3)
+figure;
 imhist(img1)
 
-subplot(2,2,4)
+figure;
 imhist(hist1, 256)
 
 figure;
-subplot(2,2,1)
 imshow(img2)
 
-subplot(2,2,2)
+figure;
 imshow(hist2)
 
-subplot(2,2,3)
+figure;
 imhist(img2)
 
-subplot(2,2,4)
+figure;
 imhist(hist2, 256)

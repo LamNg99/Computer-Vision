@@ -20,28 +20,27 @@ b8 = bitget(gray_img, 8); % Extract 8th bit-plane
 
 % Show 8 bit-plane slicing results
 figure;
-subplot(2,4,1)
 imshow(b1*255)
 
-subplot(2,4,2)
+figure;
 imshow(b2*255)
 
-subplot(2,4,3)
+figure;
 imshow(b3*255)
 
-subplot(2,4,4)
+figure;
 imshow(b4*255)
 
-subplot(2,4,5)
+figure;
 imshow(b5*255)
 
-subplot(2,4,6)
+figure;
 imshow(b6*255)
 
-subplot(2,4,7)
+figure;
 imshow(b7*255)
 
-subplot(2,4,8)
+figure; 
 imshow(b8*255)
 
 % Reconstruct the image from the highest 2 bit-planes 
@@ -51,11 +50,10 @@ reconstructed_img1 = ((2^7)*b8) + ((2^6)*b7);
 reconstructed_img2 = ((2^7)*b8) + ((2^6)*b7) + ((2^5)*b6) + ((2^4)*b5);
 
 figure;
-subplot(1,3,1)
 imshow(gray_img)
 
-subplot(1,3,2)
+figure;
 imshow(reconstructed_img1)
 
-subplot(1,3,3)
+figure;
 imshow(reconstructed_img2)

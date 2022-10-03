@@ -38,6 +38,7 @@ hold on;
 line(X, Y, 'Color',yellow);
 line(X',Y','Color',yellow);
 
+% Do the same thing with an array of circles
 for u = 0:1008:4032
     for v = 0:1008:3024
         theta = (0 : 504)' * (2 * pi / 504);
@@ -88,11 +89,10 @@ Cf = imresize(Cf,12,'nearest');
 Cb = imresize(Cb,12,'nearest');
 
 figure;
-subplot(1,2,1); 
 imshow(Cf); 
 title('Pad Method = ''fill''');
 
-subplot(1,2,2); 
+figure;
 imshow(Cb); 
 title('Pad Method = ''bound''');
 
